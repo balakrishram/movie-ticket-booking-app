@@ -1,5 +1,6 @@
 export function HomePage(){
   return (
-    <></>
+    <>
+    </>
   )
 }
