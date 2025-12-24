@@ -6,6 +6,7 @@ import { Heart, PlayCircleIcon, StarIcon } from "lucide-react";
 import formatRuntime from "../lib/formatRunTime";
 import { DateSelect } from "../components/DateSelect";
 import { MovieCard } from "../components/MovieCard"
+import { Loading } from "../components/Loading";
 
 export function MoviesDetails() {
   const navigate = useNavigate();
@@ -92,6 +93,6 @@ export function MoviesDetails() {
 
     </div>
   ) : (
-    <div> Loading ...</div>
+    <Loading />
   )
 }
