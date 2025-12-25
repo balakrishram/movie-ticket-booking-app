@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom"
 import { assets, dummyDateTimeData, dummyShowsData } from "../assets/assets"
 import { Loading } from "../components/Loading"
 import { ArrowRightIcon, ClockIcon } from "lucide-react";
-import { isoTimeFormat } from "../lib/isoTimeFormat";
+import  isoTimeFormat  from "../lib/isoTimeFormat";
 import { BlurCircle } from "../components/BlurCircle"
 import toast from "react-hot-toast";
 
@@ -95,7 +95,7 @@ export function SeatLayout() {
           </div>
         </div>
 
-        <button onClick={()=>navigate('/my-bookingss')} className="flex items-center gap-1 mt-20 px-10 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-full font-medium cursor-pointer active:scale-95">Proceed to Checkout <ArrowRightIcon strokeWidth={3} className="w-4 h-4"/></button>
+        <button onClick={()=>navigate('/my-bookings')} className="flex items-center gap-1 mt-20 px-10 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-full font-medium cursor-pointer active:scale-95">Proceed to Checkout <ArrowRightIcon strokeWidth={3} className="w-4 h-4"/></button>
 
       </div>
     </div>

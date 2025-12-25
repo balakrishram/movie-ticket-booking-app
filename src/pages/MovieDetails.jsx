@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom"
 import { dummyDateTimeData, dummyShowsData } from "../assets/assets";
 import { BlurCircle } from "../components/BlurCircle";
 import { Heart, PlayCircleIcon, StarIcon } from "lucide-react";
-import formatRuntime from "../lib/formatRunTime";
+import formatRunTime from "../lib/formatRunTime";
 import { DateSelect } from "../components/DateSelect";
 import { MovieCard } from "../components/MovieCard"
 import { Loading } from "../components/Loading";
@@ -49,7 +49,7 @@ export function MoviesDetails() {
           </p>
 
           <p>
-            {formatRuntime(show.movie.runtime)} • {" "}
+            {formatRunTime(show.movie.runtime)} • {" "}
             {show.movie.genres.map(genre => genre.name).join(", ")} • {show.movie.release_date.split("-")[0]}
           </p>
           
